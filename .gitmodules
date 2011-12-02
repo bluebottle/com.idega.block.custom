@@ -1,0 +1,3 @@
+[submodule "is.idega.idegaweb.block.pheidippides"]
+	path = is.idega.idegaweb.block.pheidippides
+	url = git@github.com:bluebottle/is.idega.idegaweb.block.pheidippides.git
