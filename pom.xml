@@ -1,0 +1,43 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+  	<groupId>com.idega.block.egov</groupId>
+  	<artifactId>com.idega.block.egov</artifactId>
+  	<version>4.1.3-SNAPSHOT</version>
+  </parent>  
+  
+  <groupId>com.idega.block.custom</groupId>
+  <artifactId>com.idega.block.custom</artifactId>
+  <version>4.1.3-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <organization>
+    <name>idega software</name>
+    <url>http://www.idega.com/</url>
+  </organization>
+  <name>Base com.idega.block.custom Project</name>
+  <description>Parent of all com.idega.block.custom group modules</description>
+  
+  <modules>
+	<module>is.idega.idegaweb.block.pheidippides</module>
+  </modules>
+  
+  <dependencyManagement>
+	<dependencies>
+		<dependency>
+	      <groupId>com.idega.block.custom</groupId>
+  		  <artifactId>is.idega.idegaweb.block.pheidippides</artifactId>
+  		  <version>4.1.3-SNAPSHOT</version>
+	      <type>jar</type>
+	    </dependency>
+	</dependencies>
+  </dependencyManagement>
+
+  <distributionManagement>
+    <site>      
+      <id>idega1egov</id>
+      <name>idega Maven2 Documentation site</name>
+          <url>file:///var/www/webs/developer.idega.com/platform5/egov</url>
+    </site>
+  </distributionManagement>
+
+</project>
